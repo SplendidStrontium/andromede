@@ -10,7 +10,7 @@ class StarsController < ApplicationController
   # GET /stars/1
   # GET /stars/1.json
   def show
-		@sun = Star.first
+		@sun = Star.find params[:id]
   end
 
   # GET /stars/new

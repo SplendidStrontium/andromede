@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 	# let's fix our home
 	root :to => 'pages#home'
 
+	get 'stars/:id' => 'stars#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
