@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151205130852) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "stars", force: :cascade do |t|
     t.string   "common_name"
     t.float    "mass_g"
