@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
 	def show
-		@str = Star.first
+		@str = Star.find(2)
 	end
 end

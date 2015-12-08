@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+mysun = Star.create(common_name: 'the Sun', mass_g: 1.989e+33, radius_m: 6.963e+8)
