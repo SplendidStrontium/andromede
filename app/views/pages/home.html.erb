@@ -1,3 +1,14 @@
-Welcome to Androme.de!
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= yield(:title) %> | Andromede</title>
+</head>
 
-<%= @str %>
+<body>
+<h1>Welcome to Androme.de!</h1>
+
+<p>My favorite star is <%= @str %></p>
+
+</body>
+</html>
