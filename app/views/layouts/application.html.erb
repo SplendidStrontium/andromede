@@ -7,13 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<nav>
-	<ul id="navbar">
-		<% [["Home", :root], ["About", :about], ["Help", :help]].each do |name,url| %>
-	  <li><%= link_to_unless_current(name, url) %></li>
-		<% end %>
-  </ul>
-</nav>
+<%= render 'layouts/header' %>
 
 <body>
 

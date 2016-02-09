@@ -1,0 +1,29 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	padding-top: 40px;
+}
+
+/* header-nav */
+
+header {
+	background-color: #888;
+	height: 35px;
+	line-height: 35px;
+}
+
+header ul {
+	font-size: 1.2em;
+}
+
+header ul a{
+	color: #9cf;
+}
+
+header ul li {
+	color: #fff;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+}
