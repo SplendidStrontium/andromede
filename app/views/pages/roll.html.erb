@@ -1,0 +1,43 @@
+<body>
+<h1>Would you like to reroll ?</h1>
+
+<div class='container-fluid'>
+
+<div class='row-fluid'>
+
+	<input type='checkbox' name='ami_active'>
+	<input type='text' name='num_dice' size='4' maxlength='3'>
+	<span class='mono_txt'>d</span>
+	<select>
+		<option value='2'>2</option>
+		<option value='4'>4</option>
+		<option value='6'>6</option>
+		<option value='8'>8</option>
+		<option value='10'>10</option>
+		<option value='20'>20</option>
+		<option value='100'>100</option>
+	</select>
+	<input type='text' name='roll_stats' class='mono_txt' value='(stats)' readonly>
+	<span class='mono_txt'>sum rolls?</span>	
+	<input type='checkbox' name='ami_sum'>
+
+</div> <!--end row fluid-->
+
+<div class='row-fluid'>
+	<button type='button' id='row-adder'>add another row</button>
+</div>
+
+<!-- might be useful http://guides.rubyonrails.org/working_with_javascript_in_rails.html -->
+
+<div class='row-fluid'>
+	<button type='button'>Roll!</button>
+</div>
+
+<div class='row-fluid'>
+<textarea id='roll_result_field' class='mono_txt' readonly>
+Here, the results of your rolls will be displayed.
+</textarea>
+</div>
+
+</div> <!--end cont fluid-->
+</body>

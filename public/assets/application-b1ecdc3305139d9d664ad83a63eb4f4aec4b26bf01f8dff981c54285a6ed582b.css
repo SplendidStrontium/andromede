@@ -8026,7 +8026,52 @@ button.close {
 }
 /* line 4, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 body {
-  padding-top: 5px;
+  padding-top: 40px;
+}
+
+/* header-nav */
+/* line 10, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+header {
+  background-color: #888;
+  height: 35px;
+  line-height: 35px;
+}
+
+/* line 16, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+header ul {
+  font-size: 1.2em;
+}
+
+/* line 20, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+header ul a {
+  color: #9cf;
+}
+
+/* line 24, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+header ul li {
+  color: #fff;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
+
+/* footer */
+/* line 33, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+#foot_cmmnt {
+  background-color: #333;
+  color: #ddd;
+}
+
+/* roll */
+/* line 40, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+#num_dice {
+  size: 6;
+}
+
+/* line 44, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+#roll_result_field {
+  height: 400px;
+  width: 600px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

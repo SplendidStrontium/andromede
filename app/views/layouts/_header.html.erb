@@ -2,7 +2,7 @@
 <div class="container">
 <nav>
 	<ul class="nav navbar-nav navbar-right">
-		<% [["Home", :root], ["About", :about], ["Help", :help]].each do |name,url| %>
+		<% [["Home", :root], ["Roll Dice", :roll], ["About", :about], ["Help", :help]].each do |name,url| %>
 	  <li><%= link_to_unless_current(name, url) %></li>
 		<% end %>
   </ul>
