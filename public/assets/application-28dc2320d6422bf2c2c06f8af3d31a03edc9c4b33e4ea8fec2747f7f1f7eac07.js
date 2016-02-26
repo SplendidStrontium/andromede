@@ -11641,11 +11641,38 @@ return jQuery;
 
 }).call(this);
 (function() {
+  window.App || (window.App = {});
 
+
+  /*
+  initializes bootstrap tooltips
+  but doesnt work temporarily
+   */
+
+  App.init = function() {};
+
+
+  /*
+  	$("a, span, i, div").tooltip()
+   */
+
+  $(document).on("page:change", function() {
+    return App.init();
+  });
 
 }).call(this);
 (function() {
+  App.Rolling = {
+    alert: function() {
+      return alert("Nice!");
+    }
+  };
 
+  $(document).on("click", "[data-behavior~=test-js]", (function(_this) {
+    return function() {
+      return App.Rolling.alert();
+    };
+  })(this));
 
 }).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
@@ -11660,6 +11687,8 @@ return jQuery;
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+
 
 
 

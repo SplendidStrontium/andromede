@@ -24,13 +24,12 @@
 </div> <!--end row fluid-->
 
 <div class='row-fluid'>
-	<button type='button' id='row-adder'>add another row</button>
+	<%= link_to "add another row", "#", data: { behavior: "test-js" }, id: "testbutton" %>
 </div>
 
-<!-- might be useful http://guides.rubyonrails.org/working_with_javascript_in_rails.html -->
 
 <div class='row-fluid'>
-	<button type='button'>Roll!</button>
+	<a class="btn btn-default" href='#'>Roll!</a>
 </div>
 
 <div class='row-fluid'>
