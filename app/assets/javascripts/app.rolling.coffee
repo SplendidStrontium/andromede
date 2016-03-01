@@ -6,14 +6,10 @@ App.Rolling =
 
 	rolla: (tDice) ->
 		return Math.ceil(Math.random() * tDice)
-	rng: (tDice, nDice) ->
-		res = App.Rolling.rolla(tDice)
+	rng: (numfaces, numdice) ->
+		res = App.Rolling.rolla(numfaces)
 		resarray = [res];
 
-
-			
-		newroll = App.Rolling.rolla(tDice)
-		
 		$("textarea#roll_result_field").val(res);
 	verify: ->
 		nDice = document.getElementById('num_d').value

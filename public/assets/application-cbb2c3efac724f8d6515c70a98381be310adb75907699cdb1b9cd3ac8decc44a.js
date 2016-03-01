@@ -11666,10 +11666,10 @@ return jQuery;
     rolla: function(tDice) {
       return Math.ceil(Math.random() * tDice);
     },
-    rng: function(tDice, nDice) {
-      var res;
-      res = App.Rolling.rolla(tDice);
-      res = res + String(App.Rolling.rolla(tDice));
+    rng: function(numfaces, numdice) {
+      var res, resarray;
+      res = App.Rolling.rolla(numfaces);
+      resarray = [res];
       return $("textarea#roll_result_field").val(res);
     },
     verify: function() {

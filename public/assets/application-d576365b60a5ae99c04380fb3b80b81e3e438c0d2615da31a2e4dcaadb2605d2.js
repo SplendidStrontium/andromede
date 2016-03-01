@@ -11663,6 +11663,10 @@ return jQuery;
 }).call(this);
 (function() {
   App.Rolling = {
+    append: function(item, strarray) {
+      strarray.push(item);
+      return strarray;
+    },
     rolla: function(tDice) {
       return Math.ceil(Math.random() * tDice);
     },

@@ -11663,15 +11663,17 @@ return jQuery;
 }).call(this);
 (function() {
   App.Rolling = {
+    append: function(item, strarray) {
+      strarray.push(item);
+      return strarray;
+    },
     rolla: function(tDice) {
       return Math.ceil(Math.random() * tDice);
     },
-    rng: function(tDice, nDice) {
-      var newroll, res, resarray;
-      res = App.Rolling.rolla(tDice);
+    rng: function(numfaces, numdice) {
+      var res, resarray;
+      res = App.Rolling.rolla(numfaces);
       resarray = [res];
-      newroll = App.Rolling.rolla(tDice);
-      alert(nDice);
       return $("textarea#roll_result_field").val(res);
     },
     verify: function() {
