@@ -1,0 +1,9 @@
+#!/bin/bash
+# running and executing
+
+echo "script: cleaning up"
+rake assets:clean
+echo "script: compiling"
+rake assets:precompile
+echo "previewing in the browser"
+rails s

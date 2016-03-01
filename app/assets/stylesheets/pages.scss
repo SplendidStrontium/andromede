@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* roll */
+
+
+#roll_result_field {
+	height: 400px;
+	width: 600px;
+}
+
 #testbutton {
-	background-color: red;
+	background-color: #bbb;
+	padding: 10px;
+	margin: 10px;
 }

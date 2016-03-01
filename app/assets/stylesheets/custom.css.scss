@@ -5,6 +5,10 @@ body {
 	padding-top: 40px;
 }
 
+.mono_txt {
+	font-family: "Courier New", Courier, monospace;
+}
+
 /* header-nav */
 
 header {
@@ -35,13 +39,4 @@ header ul li {
 	color: #ddd;
 }
 
-/* roll */
 
-.mono_txt {
-	font-family: "Courier New", Courier, monospace;
-}
-
-#roll_result_field {
-	height: 400px;
-	width: 600px;
-}

@@ -11641,26 +11641,63 @@ return jQuery;
 
 }).call(this);
 (function() {
-  this.paintIt = function(element, backgroundColor, textColor) {
-    element.style.backgroundColor = backgroundColor;
-    if (textColor != null) {
-      return element.style.color = textColor;
-    }
-  };
+  window.App || (window.App = {});
 
-  $(function() {
-    return $("a[data-background-color]").click(function(e) {
-      var backgroundColor, textColor;
-      e.preventDefault();
-      backgroundColor = $(this).data("background-color");
-      textColor = $(this).data("text-color");
-      return paintIt(this, backgroundColor, textColor);
-    });
+
+  /*
+  initializes bootstrap tooltips
+  but doesnt work temporarily
+   */
+
+  App.init = function() {};
+
+
+  /*
+  	$("a, span, i, div").tooltip()
+   */
+
+  $(document).on("page:change", function() {
+    return App.init();
   });
 
 }).call(this);
 (function() {
+  App.Rolling = {
+    rolla: function(tDice) {
+      return Math.ceil(Math.random() * tDice);
+    },
+    rng: function(tDice, nDice) {
+      var newroll, res, resarray;
+      res = App.Rolling.rolla(tDice);
+      resarray = [res];
+      newroll = App.Rolling.rolla(tDice);
+      return $("textarea#roll_result_field").val(res);
+    },
+    verify: function() {
+      var e, error, nDice, tDice;
+      nDice = document.getElementById('num_d').value;
+      tDice = document.getElementById('type_d').value;
+      try {
+        return App.Rolling.rng(tDice, nDice);
+      } catch (error) {
+        e = error;
+        console.log('caught the error thrown manually');
+        return alert(e);
+      }
+    }
+  };
 
+  $(document).on("click", "[data-behavior~=test-js]", (function(_this) {
+    return function() {
+      return alert("non-operational, apologies");
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=roll-dice]", (function(_this) {
+    return function() {
+      return App.Rolling.verify();
+    };
+  })(this));
 
 }).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
@@ -11675,6 +11712,8 @@ return jQuery;
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+
 
 
 

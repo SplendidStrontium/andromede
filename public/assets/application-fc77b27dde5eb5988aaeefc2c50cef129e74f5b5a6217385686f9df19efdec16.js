@@ -11663,14 +11663,40 @@ return jQuery;
 }).call(this);
 (function() {
   App.Rolling = {
-    alert: function() {
-      return alert("Nice!");
+    rolla: function(tDice) {
+      return Math.ceil(Math.random() * tDice);
+    },
+    rng: function(tDice, nDice) {
+      var newroll, res, resarray;
+      res = App.Rolling.rolla(tDice);
+      resarray = [res];
+      newroll = App.Rolling.rolla(tDice);
+      alert(nDice);
+      return $("textarea#roll_result_field").val(res);
+    },
+    verify: function() {
+      var e, error, nDice, tDice;
+      nDice = document.getElementById('num_d').value;
+      tDice = document.getElementById('type_d').value;
+      try {
+        return App.Rolling.rng(tDice, nDice);
+      } catch (error) {
+        e = error;
+        console.log('caught the error thrown manually');
+        return alert(e);
+      }
     }
   };
 
   $(document).on("click", "[data-behavior~=test-js]", (function(_this) {
     return function() {
-      return App.Rolling.alert();
+      return alert("non-operational, apologies");
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=roll-dice]", (function(_this) {
+    return function() {
+      return App.Rolling.verify();
     };
   })(this));
 

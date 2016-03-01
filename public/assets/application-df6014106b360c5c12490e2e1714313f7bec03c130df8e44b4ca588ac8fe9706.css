@@ -8073,6 +8073,12 @@ header ul li {
   height: 400px;
   width: 600px;
 }
+/* line 5, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#testbutton {
+  background-color: #bbb;
+  padding: 5px;
+  margin: 10px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
