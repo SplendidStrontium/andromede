@@ -7,9 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 
+<body class="<%= controller_name %> <%= action_name %>">
 <%= render 'layouts/header' %>
 
-<body class="<%= controller_name %> <%= action_name %>">
+<div class='container' id='flsh_msg_cont'>
+	<% flash.each do |key, value| %>
+		<div class="alert alert-<%= key %>"><%= value %></div>
+	<% end %>
+</div>
+
 
 <%= yield %>
 <%= render 'layouts/footer' %>

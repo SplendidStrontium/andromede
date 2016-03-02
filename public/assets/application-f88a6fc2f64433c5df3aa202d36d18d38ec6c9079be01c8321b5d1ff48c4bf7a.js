@@ -11663,30 +11663,29 @@ return jQuery;
 }).call(this);
 (function() {
   App.Rolling = {
-    append: function(item, strarray) {
-      strarray.push(item);
-      return strarray;
+    clear: function() {
+      return $("textarea#roll_result_field").val('');
     },
     rolla: function(tDice) {
       return Math.ceil(Math.random() * tDice);
     },
-    rng: function(tDice, nDice) {
-      var newroll, res, resarray;
-      res = App.Rolling.rolla(tDice);
-      resarray = [res];
-      newroll = App.Rolling.rolla(tDice);
-      return $("textarea#roll_result_field").val(res);
+    rollme: function(myroll) {
+      var res;
+      App.Rolling.print(myroll.numfaces);
+      res = [];
+      return App.Rolling.print(res);
     },
-    verify: function() {
-      var e, error, nDice, tDice;
-      nDice = document.getElementById('num_d').value;
-      tDice = document.getElementById('type_d').value;
-      try {
-        return App.Rolling.rng(tDice, nDice);
-      } catch (error) {
-        e = error;
-        console.log('caught the error thrown manually');
-        return alert(e);
+    print: function(str) {
+      return $("textarea#roll_result_field").val(str);
+    },
+    verify: function(inp_dice) {
+      var myerror;
+      if (!isFinite(inp_dice) || inp_dice < 1 || inp_dice > 16) {
+        myerror = "You wrote " + inp_dice + "; please enter a sensible number of dice";
+        App.Rolling.print(myerror);
+        return false;
+      } else {
+        return true;
       }
     }
   };
@@ -11697,9 +11696,30 @@ return jQuery;
     };
   })(this));
 
+  $(document).on("click", "[data-behavior~=clear-outp]", (function(_this) {
+    return function() {
+      return App.Rolling.clear();
+    };
+  })(this));
+
   $(document).on("click", "[data-behavior~=roll-dice]", (function(_this) {
     return function() {
-      return App.Rolling.verify();
+      var e, error, myRoll, nDice, tDice;
+      nDice = document.getElementById('num_d').value;
+      tDice = document.getElementById('type_d').value;
+      if (App.Rolling.verify(nDice)) {
+        myRoll = {
+          numfaces: tDice,
+          numdice: nDice
+        };
+        try {
+          return App.Rolling.rollme(myRoll);
+        } catch (error) {
+          e = error;
+          console.log('caught the error thrown manually');
+          return App.Rolling.print('an error occurred');
+        }
+      }
     };
   })(this));
 

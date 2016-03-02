@@ -6,7 +6,7 @@
 <div class='row-fluid'>
 
 	<input type='checkbox' name='ami_active' checked='checked'>
-	<input type='text' id='num_d' size='4' maxlength='3' value='1'>
+	<input type='text' id='num_d' size='4' maxlength='3' value=1>
 	<span class='mono_txt'>d</span>
 	<select id='type_d'>
 		<option value='4'>4</option>
@@ -27,10 +27,10 @@
 
 <div class='row-fluid'>
 	<%= link_to "(add another row)", "#", data: { behavior: "test-js" }, id: "testbutton", class: "mono_txt" %>
-</div>
 
-<div class='row-fluid'>
 	<%= link_to "roll", "#", data: {behavior: "roll-dice"}, id: "testbutton", class: "mono_txt" %>
+
+	<%= link_to "clear", "#", data: {behavior: "clear-outp"}, id: "testbutton", class: "mono_txt" %>
 </div>
 
 <div class='row-fluid'>
