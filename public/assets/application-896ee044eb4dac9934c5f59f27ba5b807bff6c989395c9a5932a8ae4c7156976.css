@@ -8029,25 +8029,30 @@ body {
   padding-top: 40px;
 }
 
+/* line 8, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+.mono_txt {
+  font-family: "Courier New", Courier, monospace;
+}
+
 /* header-nav */
-/* line 10, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 14, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 header {
   background-color: #888;
   height: 35px;
   line-height: 35px;
 }
 
-/* line 16, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 20, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 header ul {
   font-size: 1.2em;
 }
 
-/* line 20, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 24, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 header ul a {
   color: #9cf;
 }
 
-/* line 24, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 28, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 header ul li {
   color: #fff;
   display: inline-block;
@@ -8056,27 +8061,22 @@ header ul li {
 }
 
 /* footer */
-/* line 33, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 37, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
 #foot_cmmnt {
   background-color: #333;
   color: #ddd;
 }
-
 /* roll */
-/* line 40, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
-.mono_txt {
-  font-family: "Courier New", Courier, monospace;
-}
-
-/* line 44, /home/paige/andromede/app/assets/stylesheets/custom.css.scss */
+/* line 9, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #roll_result_field {
   height: 400px;
-  width: 600px;
+  width: 650px;
 }
-/* line 5, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+
+/* line 14, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #testbutton {
   background-color: #bbb;
-  padding: 5px;
+  padding: 10px;
   margin: 10px;
 }
 /*

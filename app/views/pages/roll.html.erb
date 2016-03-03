@@ -1,26 +1,36 @@
 <body>
 <h1>Would you like to reroll ?</h1>
-<p>This is a prototype tool for simulating the rolling of various kinds of polyhedral dice, such as may be used in role-playing games.</p>
+<p>This is a prototype tool for simulating the rolling of various kinds of polyhedral dice, such as may be used in role-playing games. I'm still working out the bugs, so if you get stuck somewhere, please push the button to reload and try again.</p>
 
 <div class='container-fluid'>
 <div class='row-fluid'>
 
 	<input type='checkbox' name='ami_active' checked='checked'>
-	<input type='text' id='num_d' size='4' maxlength='3' value=1>
-	<span class='mono_txt'>d</span>
-	<select id='type_d'>
-		<option value='4'>4</option>
+	<select id='num_die'>
+		<option value='1'>1</option>
+		<option value='2'>2</option>
+		<option value='3'>3</option>
+		<option value='4' selected>4</option>
+		<option value='5'>5</option>
 		<option value='6'>6</option>
+	</select>
+	<span class='mono_txt'>d</span>
+	<select id='type_die'>
+		<option value='4'>4</option>
+		<option value='6' selected>6</option>
 		<option value='8'>8</option>
 		<option value='10'>10</option>
 		<option value='20'>20</option>
 		<option value='100'>100</option>
 	</select>
 	<input type='text' name='roll_stats' class='mono_txt' value='(stats)' readonly>
-	<span class='mono_txt'>drop the lowest roll?</span>	
-	<input type='checkbox' name='ami_drop1'>
+	<span class='mono_txt'>drop the lowest:</span>	
+	<select id='num_drop'>
+		<option value='0'>0</option>
+		<option value='1' selected>1</option>
+	</select>
 	<span class='mono_txt'>sum rolls?</span>	
-	<input type='checkbox' name='ami_sum'>
+	<input type='checkbox' id='ami_sum' checked='checked' value='summed'>
 
 </div> <!--end row fluid-->
 </div> <!--end cont fluid-->
@@ -31,11 +41,12 @@
 	<%= link_to "roll", "#", data: {behavior: "roll-dice"}, id: "testbutton", class: "mono_txt" %>
 
 	<%= link_to "clear", "#", data: {behavior: "clear-outp"}, id: "testbutton", class: "mono_txt" %>
+
+	<%= link_to "reload", "#", data: {behavior: "reload-pg"}, id: "testbutton", class: "mono_txt" %>
 </div>
 
 <div class='row-fluid'>
-<textarea id='roll_result_field' class='mono_txt' readonly>
-Here, the results of your rolls will be displayed.
+<textarea id='roll_result_field' class='mono_txt' val='values display below' readonly>
 </textarea>
 </div>
 

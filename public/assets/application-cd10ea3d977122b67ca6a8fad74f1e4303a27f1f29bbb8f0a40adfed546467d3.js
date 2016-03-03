@@ -11664,33 +11664,45 @@ return jQuery;
 (function() {
   App.Rolling = {
     clear: function() {
-      return $("textarea#roll_result_field").val('');
+      return $("#roll_result_field").val('');
     },
     rolla: function(tDice) {
       return Math.ceil(Math.random() * tDice);
     },
     rollme: function(myroll) {
-      var num, res;
-      res = (function() {
-        var i, len, ref, results;
-        ref = myroll.numdice;
+      var myres, mystr, sum;
+      myres = (function() {
+        var i, ref, results;
         results = [];
-        for (i = 0, len = ref.length; i < len; i++) {
-          num = ref[i];
-          results.push(num);
+        for (i = 1, ref = myroll.numdice; 1 <= ref ? i <= ref : i >= ref; 1 <= ref ? i++ : i--) {
+          results.push(App.Rolling.rolla(myroll.numfaces));
         }
         return results;
       })();
-      return App.Rolling.print(res);
+      myres.sort();
+      if (!(myroll.numdrop === 0)) {
+        App.Rolling.prints('not zero');
+      }
+      if (myroll.issum) {
+        mystr = App.Rolling.addbrkts(String(myres));
+        sum = myres.reduce(function(x, y) {
+          return x + y;
+        });
+        mystr = mystr + " = " + sum;
+        return App.Rolling.prints(mystr);
+      } else {
+        mystr = App.Rolling.addbrkts(String(myres));
+        return App.Rolling.prints(mystr);
+      }
     },
-    print: function(str) {
-      return $("textarea#roll_result_field").val(str);
+    prints: function(str) {
+      return $("#roll_result_field").append(str + "\n");
     },
-    verify: function(inp_dice) {
-      var myerror;
-      if (!isFinite(inp_dice) || inp_dice < 1 || inp_dice > 16) {
-        myerror = "You wrote " + inp_dice + "; please enter a sensible number of dice";
-        App.Rolling.print(myerror);
+    addbrkts: function(str) {
+      return "[" + str + "]";
+    },
+    verify: function(aRoll) {
+      if (!isFinite(aRoll.numfaces)) {
         return false;
       } else {
         return true;
@@ -11706,27 +11718,44 @@ return jQuery;
 
   $(document).on("click", "[data-behavior~=clear-outp]", (function(_this) {
     return function() {
-      return App.Rolling.clear();
+      return $("#roll_result_field").val('');
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=reload-pg]", (function(_this) {
+    return function() {
+      return location.reload();
     };
   })(this));
 
   $(document).on("click", "[data-behavior~=roll-dice]", (function(_this) {
     return function() {
-      var e, error, myRoll, nDice, tDice;
-      nDice = document.getElementById('num_d').value;
-      tDice = document.getElementById('type_d').value;
-      if (App.Rolling.verify(nDice)) {
-        myRoll = {
-          numfaces: tDice,
-          numdice: nDice
-        };
+      var e, error, isSum, myRoll, nDice, nDrop, tDice;
+      nDice = Number(document.getElementById('num_die').value);
+      tDice = Number(document.getElementById('type_die').value);
+      nDrop = Number(document.getElementById('num_drop').value);
+      isSum = document.getElementById('ami_sum').value;
+      if (isSum === 'summed') {
+        isSum = true;
+      } else {
+        isSum = false;
+      }
+      myRoll = {
+        numfaces: tDice,
+        numdice: nDice,
+        numdrop: nDrop,
+        issum: isSum
+      };
+      if (App.Rolling.verify(myRoll)) {
         try {
           return App.Rolling.rollme(myRoll);
         } catch (error) {
           e = error;
           console.log('caught the error thrown manually');
-          return App.Rolling.print('an error occurred');
+          return App.Rolling.prints('an error occurred');
         }
+      } else {
+        return App.Rolling.prints('Something went wrong with your input...');
       }
     };
   })(this));
