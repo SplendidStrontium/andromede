@@ -6,11 +6,20 @@
 </head>
 
 
-
 <body>
 <h1>Welcome to Androme.de!</h1>
 
 <p>My favorite star is <%= @str %><%= Star.first.common_name %></p>
+
+<div id="computress">
+<div id="home_console">
+	<textarea id="hm_disp_txt" readonly>Hey!</textarea>
+</div>
+<div id="home_input">
+	<div id="hm_inp_txt">></div>
+	<input type="text" id="user_inp" placeholder="...say &quot;hello&quot;?">
+</div>
+</div>
 
 </body>
 </html>

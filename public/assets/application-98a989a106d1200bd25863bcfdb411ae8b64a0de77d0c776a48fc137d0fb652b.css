@@ -8066,14 +8066,62 @@ header ul li {
   background-color: #333;
   color: #ddd;
 }
-/* roll */
-/* line 9, /home/paige/andromede/app/assets/stylesheets/pages.scss */
-#roll_result_field {
-  height: 400px;
+/* home */
+/* line 8, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#home_console {
+  height: 200px;
   width: 600px;
+  background-color: #222;
+  margin-left: 40px;
 }
 
-/* line 14, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+/* line 15, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#home_input {
+  height: 2em;
+  width: 600px;
+  background-color: #555;
+  position: absolute;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 24, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#hm_disp_txt {
+  color: #ff8533;
+  font-variant: normal;
+  font-weight: bold;
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  border: none;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+/* line 35, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#user_inp {
+  position: absolute;
+  left: 20px;
+  border: none;
+  background: rgba(0, 255, 0, 0.2);
+}
+
+/* line 42, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#computress {
+  font-family: "Courier New", monospace;
+  border: 1px dashed #000;
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+
+/* roll */
+/* line 54, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#roll_result_field {
+  height: 400px;
+  width: 650px;
+}
+
+/* line 59, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #testbutton {
   background-color: #bbb;
   padding: 10px;

@@ -2,6 +2,67 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* home */
+
+#home_console {
+	height: 200px;
+	width: 600px;
+	background-color: #222;
+	margin-left: 40px;
+}
+
+#home_input {
+	height: 2em;
+	width: 600px;
+	background-color: #555;
+	position: absolute;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+#hm_disp_txt {
+	color: #ff8533;
+	font-variant: normal;
+	font-size: 1.1em;
+	font-weight: bold;
+	position: absolute;
+	width: 600px;
+	height: 100px;
+	border: none;
+	background: rgba(255,0,0,0.2);
+}
+
+#hm_inp_txt {
+	margin-top: auto;
+	margin-bottom: auto;
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#user_inp {
+	margin-top: auto;
+	margin-bottom: auto;
+	position: absolute;
+	width: 400px;
+	left: 20px;
+	top: 3px;
+	border: none;
+	background: rgba(0,255,0,0.2);
+	font-size: 0.9em;
+}
+
+#computress {
+	font-family: "Courier New", monospace;
+	border: 1px dashed #000;
+	width: 800px;
+	height: 300px;
+	position: relative;
+}
+
+
 /* roll */
 
 
