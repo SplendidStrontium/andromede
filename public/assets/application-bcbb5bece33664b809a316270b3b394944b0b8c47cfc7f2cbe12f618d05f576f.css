@@ -8070,7 +8070,7 @@ header ul li {
 /* line 8, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #home_console {
   height: 200px;
-  width: 600px;
+  width: 700px;
   background-color: #222;
   margin-left: 40px;
 }
@@ -8078,7 +8078,7 @@ header ul li {
 /* line 15, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #home_input {
   height: 2.2em;
-  width: 600px;
+  width: 700px;
   background-color: #555;
   position: absolute;
   margin-left: 40px;
@@ -8092,10 +8092,10 @@ header ul li {
   font-size: 1.1em;
   font-weight: bold;
   position: absolute;
-  width: 600px;
-  height: 100px;
+  width: 700px;
+  height: 200px;
   border: none;
-  background: rgba(255, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* line 36, /home/paige/andromede/app/assets/stylesheets/pages.scss */
@@ -8137,19 +8137,56 @@ header ul li {
   border-radius: 2px;
   display: inline-block;
   position: absolute;
-  right: 5px;
+  right: 90px;
   top: 2px;
   padding: 2px 3px 2px 3px;
+  margin: 0px 1px 0px 1px;
+}
+
+/* line 77, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#clearbutton {
+  border: 1px solid #00f;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  right: 65px;
+  top: 2px;
+  padding: 2px 10px 2px 10px;
+  margin: 0px 1px 0px 1px;
+}
+
+/* line 88, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#pwrbutton {
+  border: 1px solid #00f;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 1px 0px 1px;
+}
+
+/* line 99, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+#rldbutton {
+  border: 1px solid #00f;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 1px 0px 1px;
 }
 
 /* roll */
-/* line 80, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+/* line 115, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #roll_result_field {
   height: 400px;
   width: 650px;
 }
 
-/* line 85, /home/paige/andromede/app/assets/stylesheets/pages.scss */
+/* line 120, /home/paige/andromede/app/assets/stylesheets/pages.scss */
 #testbutton {
   background-color: #bbb;
   padding: 10px;

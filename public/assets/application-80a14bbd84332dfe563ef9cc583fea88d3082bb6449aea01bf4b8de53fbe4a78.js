@@ -11661,10 +11661,51 @@ return jQuery;
   });
 
 }).call(this);
+
+/*
+MAIN COMPUTRESS
+ */
+
 (function() {
-  $(document).on("click", "[data-behavior~=clear-outp]", (function(_this) {
+  App.Computress = {
+    clear: function() {
+      return $("#hm_disp_txt").val('');
+    },
+    greet: function() {
+      return App.Computress.prints("Welcome!");
+    },
+    poweron: function() {
+      return App.Computress.clear();
+    },
+    powerdown: function() {
+      return App.Computress.prints('power down');
+    },
+    prints: function(str) {
+      return $("#hm_disp_txt").append(str + "\n");
+    }
+  };
+
+  $(document).on("click", "[data-behavior~=computress-listen]", (function(_this) {
     return function() {
-      return $("#roll_result_field").val('');
+      return App.Computress.prints("ping received");
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=computress-listen-clear]", (function(_this) {
+    return function() {
+      return App.Computress.clear();
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=computress-power]", (function(_this) {
+    return function() {
+      return App.Computress.greet();
+    };
+  })(this));
+
+  $(document).on("click", "[data-behavior~=computress-reload]", (function(_this) {
+    return function() {
+      return location.reload();
     };
   })(this));
 
