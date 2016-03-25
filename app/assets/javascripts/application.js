@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require init
+//= require app.computress
 //= require app.rolling
 

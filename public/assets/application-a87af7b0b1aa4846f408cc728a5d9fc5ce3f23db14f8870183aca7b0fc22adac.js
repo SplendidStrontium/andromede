@@ -11662,6 +11662,15 @@ return jQuery;
 
 }).call(this);
 (function() {
+  $(document).on("click", "[data-behavior~=computress-listen-clear]", (function(_this) {
+    return function() {
+      alert('hey');
+      return $("#user_inp").val('');
+    };
+  })(this));
+
+}).call(this);
+(function() {
   App.Rolling = {
     clear: function() {
       return $("#roll_result_field").val('');
@@ -11681,14 +11690,7 @@ return jQuery;
       })();
       myres.sort();
       if (!(myroll.numdrop === 0)) {
-        myres = (function() {
-          var i, ref, results;
-          results = [];
-          for (i = 1, ref = myroll.numdrop; 1 <= ref ? i <= ref : i >= ref; 1 <= ref ? i++ : i--) {
-            results.push(myres.shift());
-          }
-          return results;
-        })();
+        myres.shift();
       }
       if (myroll.issum) {
         mystr = App.Rolling.addbrkts(String(myres));
@@ -11780,6 +11782,7 @@ return jQuery;
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 
 
 

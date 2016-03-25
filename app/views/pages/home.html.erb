@@ -13,11 +13,14 @@
 
 <div id="computress">
 <div id="home_console">
-	<textarea id="hm_disp_txt" readonly>Hey!</textarea>
+	<textarea id="hm_disp_txt" readonly>Zzzzzz....</textarea>
 </div>
 <div id="home_input">
 	<div id="hm_inp_txt">></div>
 	<input type="text" id="user_inp" placeholder="...say &quot;hello&quot;?">
+	<%= link_to "send", "#", data: {behavior: "computress-listen"}, id: "talkbutton", class: "comptrss_mono_txt" %>
+	<%= link_to "C", "#", data: {behavior: "computress-listen-clear"}, id: "clearbutton", class: "comptrss_mono_txt" %>
+	<%= link_to "pwr", "#", data: {behavior: "computress-power"}, id: "pwrbutton", class: "comptrss_mono_txt" %>
 </div>
 </div>
 

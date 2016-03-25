@@ -11662,6 +11662,10 @@ return jQuery;
 
 }).call(this);
 (function() {
+
+
+}).call(this);
+(function() {
   App.Rolling = {
     clear: function() {
       return $("#roll_result_field").val('');
@@ -11773,6 +11777,7 @@ return jQuery;
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 
 
 

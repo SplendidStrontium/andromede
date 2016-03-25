@@ -12,7 +12,7 @@
 }
 
 #home_input {
-	height: 2em;
+	height: 2.2em;
 	width: 600px;
 	background-color: #555;
 	position: absolute;
@@ -61,6 +61,40 @@
 	height: 300px;
 	position: relative;
 }
+
+#talkbutton {
+	border: 1px solid #00f;
+	border-radius: 2px;
+	display: inline-block;
+	position: absolute;
+	right: 80px;
+	top: 2px;
+	padding: 2px 3px 2px 3px;
+	margin: 0px 1px 0px 1px;
+}
+
+#clearbutton {
+	border: 1px solid #00f;
+	border-radius: 2px;
+	display: inline-block;
+	position: absolute;
+	right: 45px;
+	top: 2px;
+	padding: 2px 10px 2px 10px;
+	margin: 0px 1px 0px 1px;
+}
+
+#pwrbutton {
+	border: 1px solid #00f;
+	border-radius: 2px;
+	display: inline-block;
+	position: absolute;
+	right: 5px;
+	top: 2px;
+	padding: 2px 5px 2px 5px;
+	margin: 0px 1px 0px 1px;
+}
+
 
 
 /* roll */
