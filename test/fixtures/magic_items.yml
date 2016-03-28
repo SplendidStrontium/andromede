@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  value_gp: 9.99
+  weight_gp: 9.99
+  desc_long: MyText
+
+two:
+  name: MyString
+  value_gp: 9.99
+  weight_gp: 9.99
+  desc_long: MyText

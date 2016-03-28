@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 	get 'stars/:id' => 'stars#show'
 
+	get '/andb', :to => 'pages#andb'
   get '/roll', :to => 'pages#roll'
   get '/about', :to => 'static_pages#about'
   get '/help', :to => 'static_pages#help'
