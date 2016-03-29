@@ -1,0 +1,24 @@
+[{
+	"common_name": "Betelgeuse",
+	"other_names": [],
+	"pri_id_key": "",
+	"mass_g": [],
+	"mass_solar": [],
+	"radius_m": [],
+	"radius_solar": [],
+	"galactic_coord": [{
+		"epoch": "J2000.0",
+		"right_asc": [{
+			"hrs": [],
+			"min": [],
+			"sec": []		
+		}],
+		"declination": [{
+			"deg": [],
+			"sec": [],
+			"arc_sec": []
+		}]
+	}],
+	"my_tstamp": []
+}]
+

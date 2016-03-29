@@ -1,0 +1,31 @@
+[{
+	"common_name": "the Sun",
+	"other_names": ["Sol","our Sun"],
+	"pri_id_key": "",
+	"mass_g": [1.989e+33],
+	"radius_m": [6.963e+8],
+	"my_tstamp": []
+}, {
+	"common_name": "Betelgeuse",
+	"other_names": [],
+	"pri_id_key": "",
+	"mass_g": [],
+	"mass_solar": [7.7,20],
+	"radius_m": [],
+	"radius_solar": [950,1200],
+	"galactic_coord": [{
+		"epoch": "J2000.0",
+		"right_asc": [{
+			"hrs": [5],
+			"min": [55],
+			"sec": [10.3053]		
+		}],
+		"declination": [{
+			"deg": [7],
+			"sec": [24],
+			"arc_sec": [25.426]
+		}]
+	}],
+	"my_tstamp": []
+}]
+
