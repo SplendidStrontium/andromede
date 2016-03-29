@@ -1,4 +1,6 @@
 class StarsController < ApplicationController
+require 'crud_test.rb'
+
   before_action :set_star, only: [:show, :edit, :update, :destroy]
 
   # GET /stars
@@ -61,6 +63,14 @@ class StarsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+	# COMPARE database and JSON source
+	def compare_json_src
+		# check the starmodel, also /lib/crud_test.rb
+	end
+
+
+	# PRIVATE METHODS
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160328193931) do
+ActiveRecord::Schema.define(version: 20160329184839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,16 @@ ActiveRecord::Schema.define(version: 20160328193931) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.float    "radius_m"
+    t.string   "other_names"
+    t.integer  "pri_id_key"
+    t.string   "star_system"
+    t.string   "has_planets"
+    t.string   "is_inhabited"
+    t.float    "mass_solar"
+    t.float    "radius_solar"
+    t.float    "distance_ly_obj_to_earth"
+    t.string   "galactic_coord"
+    t.string   "my_tstamp"
   end
 
 end
