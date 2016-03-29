@@ -2,8 +2,11 @@
 	"common_name": "the Sun",
 	"other_names": ["Sol","our Sun"],
 	"pri_id_key": "",
+	"has_planets": ["Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune","Pluto"],
+	"is_inhabited": ["Earth"],
 	"mass_g": [1.989e+33],
 	"radius_m": [6.963e+8],
+	"distance_ly_obj_to_earth": [1.581e-5],
 	"my_tstamp": []
 }, {
 	"common_name": "Betelgeuse",
@@ -13,6 +16,7 @@
 	"mass_solar": [7.7,20],
 	"radius_m": [],
 	"radius_solar": [950,1200],
+	"distance_ly_obj_to_earth": [497,789],
 	"galactic_coord": [{
 		"epoch": "J2000.0",
 		"right_asc": [{
@@ -22,10 +26,91 @@
 		}],
 		"declination": [{
 			"deg": [7],
-			"sec": [24],
-			"arc_sec": [25.426]
+			"min": [24],
+			"sec": [25.426]
 		}]
 	}],
 	"my_tstamp": []
+}, {
+	"common_name": "α Centauri A",
+	"other_names": ["Alpha Centauri","Rigil Kent","the Centaurs Foot","Toliman"],
+	"pri_id_key": "",
+	"star_system": ["self","α Centauri B","Proxima Centauri"],
+	"has_planets": [{}],
+	"is_inhabited": "unknown",
+	"mass_g": [],
+	"mass_solar": [1.1],
+	"radius_m": [],
+	"radius_solar": [1.227],
+	"distance_ly_obj_to_earth": [4.37],
+	"galactic_coord": [{
+		"epoch": "J2000.0",
+		"right_asc": [{
+			"hrs": [14],
+			"min": [39],
+			"sec": [36.49400]		
+		}],
+		"declination": [{
+			"deg": [-60],
+			"min": [50],
+			"sec": [2.3737]
+		}]
+	}],
+	"my_tstamp": []
+
+}, {
+	"common_name": "α Centauri B",
+	"other_names": ["Alpha Centauri"],
+	"pri_id_key": "",
+	"star_system": ["self", "α Centauri A","Proxima Centauri"],
+	"has_planets": [{}],
+	"is_inhabited": "unknown",
+	"mass_g": [],
+	"mass_solar": [0.907],
+	"radius_m": [],
+	"radius_solar": [0.865],
+	"distance_ly_obj_to_earth": [4.37],
+	"galactic_coord": [{
+		"epoch": "J2000.0",
+		"right_asc": [{
+			"hrs": [14],
+			"min": [39],
+			"sec": [35.06311]		
+		}],
+		"declination": [{
+			"deg": [-60],
+			"min": [50],
+			"sec": [15.0992]
+		}]
+	}],
+	"my_tstamp": []
+
+}, {
+	"common_name": "β Centauri A1",
+	"other_names": ["马腹一"],
+	"pri_id_key": "",
+	"star_system": ["self", "β Centauri A2", "β Centauri B"],
+	"has_planets": [{}],
+	"is_inhabited": "unknown",
+	"mass_g": [],
+	"mass_solar": [10.6,10.8],
+	"radius_m": [],
+	"radius_solar": [],
+	"distance_ly_obj_to_earth": [370,410],
+	"galactic_coord": [{
+		"epoch": "J2000.0",
+		"right_asc": [{
+			"hrs": [14],
+			"min": [3],
+			"sec": [49.40535]		
+		}],
+		"declination": [{
+			"deg": [-60],
+			"min": [22],
+			"sec": [22.9266]
+		}]
+	}],
+	"my_tstamp": []
+
 }]
 
