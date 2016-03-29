@@ -1,8 +1,87 @@
-{
+[{
 	"name":	"Amulet of Health",
-	"desc_long":	"This amulet is a golden disk on a chain. It usually bears the image of a lion or other powerful animal. The amulet grants the wearer an enhancement bonus to Constitution of +2, +4, or +6."
-},
-{
+  "desc_short": "amulet",
+	"desc_long":	"This amulet is a golden disk on a chain. It usually bears the image of a lion or other powerful animal.",
+  "magic_effect_table": { 
+     "primary_stat": "constitution",
+     "primary_stat_mod": [2,4,6]     
+  },
+  "magic_field_desc": "moderate-transmutation",
+  "min_caster_lvl_to_craft": [8],
+  "value_gp": [4000,16000,36000]
+}, {
 	"name":	"Amulet of Mighty Fists",
-	"desc_long":	"This amulet grants an enhancement bonus of +1 to +5 on attack and damage rolls with unarmed attacks and natural weapons."
-}
+  "desc_short": "amulet",
+	"desc_long":	"",
+  "magic_effect_table": {
+    "primary_stat": "hit",
+    "primary_stat_mod": [1,2,3,4,5],
+    "secondary_stat_mod": "damage",
+    "secondary_stat_mod": [1,2,3,4,5]
+  },
+  "magic_field_desc": "faint-evocation",
+  "min_caster_lvl_to_craft": [5],
+  "value_gp": [6000,24000,54000,96000]
+}, {
+  "name": "Amulet of Natural Armor",
+  "desc_short": "amulet",
+  "desc_long": "This amulet, usually crafted from bone or beast scales, toughens the wearer’s body and flesh, giving him an enhancement bonus to his natural armor bonus of from +1 to +5, depending on the kind of amulet.",
+  "magic_effect_table": [{
+    "primary_stat": "natural-armor",
+    "primary_stat_mod": [1,2,3,4,5],
+    "secondary_stat": "",
+    "secondary_stat_mod": []
+    }],
+  "magic_field_desc": "faint-transmutation",
+  "min_caster_lvl_to_craft": [5,6,9,12,15],
+  "value_gp": [2000,8000,18000,32000,50000]
+}, {
+  "name": "Amulet of the Planes",
+  "desc_short": "amulet",
+  "desc_long": "This device usually appears to be a black circular amulet, although any character looking closely at it sees a dark, moving swirl of color. The amulet allows its wearer to utilize plane shift. However, this is a difficult item to master. The user must make a DC 15 Intelligence check in order to get the amulet to take her to the plane (and the specific location on that plane) that she wants. If she fails, the amulet transports her and all those traveling with her to a random location on that plane (01-60 on d%) or to a random plane (61-100).",
+  "magic_effect_table": [{
+    "primary_stat": "",
+    "primary_stat_mod": [],
+    "secondary_stat": "",
+    "secondary_stat_mod": [],
+    "alt_effect": "learn-spell-plane-shift",
+    "alt_effect_desc": "The user must make a DC 15 Intelligence check in order to get the amulet to take her to the plane (and the specific location on that plane) that she wants. If she fails, the amulet transports her and all those traveling with her to a random location on that plane (01-60 on d%) or to a random plane (61-100)."
+    }],
+  "magic_field_desc": "strong-conjuration",
+  "min_caster_lvl_to_craft": [15],
+  "value_gp": [120000]
+}, {
+  "name": "Amulet of Proof against Detection and Location",
+  "desc_short": "amulet",
+  "desc_long": "This silver amulet protects the wearer from scrying and magical location just as a nondetection spell does. If a divination spell is attempted against the wearer, the caster of the divination must succeed on a caster level check (1d20 + caster level) against a DC of 19 (as if the caster had cast nondetection on herself).",
+  "magic_effect_table": [{
+    "primary_stat": "",
+    "primary_stat_mod": [],
+    "secondary_stat": "",
+    "secondary_stat_mod": [],
+    "alt_effect": "buff-self-nondetection",
+    "alt_effect_desc": " If a divination spell is attempted against the wearer, the caster of the divination must succeed on a caster level check (1d20 + caster level) against a DC of 19 (as if the caster had cast nondetection on herself)."
+    }],
+  "magic_field_desc": "moderate-abjuration",
+  "min_caster_lvl_to_craft": [8],
+  "value_gp": [35000]
+}, {
+  "name": "Apparatus of the Crab",
+  "desc_short": "barrel-large",
+  "desc_long": "This item appears to be a large, sealed iron barrel, but it has a secret catch (Search DC 20 to locate) that opens a hatch in one end. Anyone who crawls inside finds ten (unlabeled) levers: The device has the following characteristics: hp 200; hardness 15; Spd 20 ft., swim 20 ft.; AC 20 (-1 size, +11 natural); Atk +12 melee (2d8, 2 pincers). Operating a lever is a full-round action, and no lever may be operated more than once per round. However, since two Medium characters can fit inside, the apparatus can move and attack in the same round. The device can function in water up to 900 feet deep. It holds enough air for a crew of two to survive 1d4+1 hours (twice as long for a single occupant). When activated, the apparatus looks something like a giant lobster.",
+  "enc_tables": [{
+    "lever_1d10": [1,2,3,4,5,6,7,8,9,10],
+    "lever_fcn": ["Extend/retract legs and tail","Uncover/cover forward porthole","Uncover/cover side portholes","Extend/retract pincers and feelers","Snap pincers","Move forward/backward","Turn left/right","Open eyes with continual flame inside/close eyes","Rise/sink in water","Open/close hatch"]}],
+  "magic_effect_table": [{
+    "primary_stat": "",
+    "primary_stat_mod": [],
+    "secondary_stat": "",
+    "secondary_stat_mod": [],
+    "alt_effect": "",
+    "alt_effect_desc": ""
+    }],
+  "magic_field_desc": ["strong-evocation","strong-transmutation"],
+  "min_caster_lvl_to_craft": [19],
+  "value_gp": [90000],
+  "weight_lb": [500]
+}]
