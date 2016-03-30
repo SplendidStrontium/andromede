@@ -70,8 +70,17 @@
   "desc_short": "barrel-large",
   "desc_long": "This item appears to be a large, sealed iron barrel, but it has a secret catch (Search DC 20 to locate) that opens a hatch in one end. Anyone who crawls inside finds ten (unlabeled) levers: The device has the following characteristics: hp 200; hardness 15; Spd 20 ft., swim 20 ft.; AC 20 (-1 size, +11 natural); Atk +12 melee (2d8, 2 pincers). Operating a lever is a full-round action, and no lever may be operated more than once per round. However, since two Medium characters can fit inside, the apparatus can move and attack in the same round. The device can function in water up to 900 feet deep. It holds enough air for a crew of two to survive 1d4+1 hours (twice as long for a single occupant). When activated, the apparatus looks something like a giant lobster.",
   "enc_tables": [{
-    "lever_1d10": [1,2,3,4,5,6,7,8,9,10],
-    "lever_fcn": ["Extend/retract legs and tail","Uncover/cover forward porthole","Uncover/cover side portholes","Extend/retract pincers and feelers","Snap pincers","Move forward/backward","Turn left/right","Open eyes with continual flame inside/close eyes","Rise/sink in water","Open/close hatch"]}],
+  	"effect1": "Extend/retract legs and tail",
+  	"effect2": "Uncover/cover forward porthole",
+  	"effect3": "Uncover/cover side portholes",
+  	"effect4": "Extend/retract pincers and feelers",
+  	"effect5": "Snap pincers",
+  	"effect6": "Move forward/backward,
+  	"effect7": "Turn left/right",
+  	"effect8": "Open eyes with continual flame inside/close eyes",
+  	"effect9": "Rise/sink in water",
+  	"effect10": "Open/close hatch"
+  }],
   "magic_effect_table": [{
     "primary_stat": "",
     "primary_stat_mod": [],
