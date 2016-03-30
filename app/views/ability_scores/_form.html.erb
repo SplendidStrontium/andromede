@@ -1,0 +1,41 @@
+<%= form_for(@ability_score) do |f| %>
+  <% if @ability_score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ability_score.errors.count, "error") %> prohibited this ability_score from being saved:</h2>
+
+      <ul>
+      <% @ability_score.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.number_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :dexterity %><br>
+    <%= f.number_field :dexterity %>
+  </div>
+  <div class="field">
+    <%= f.label :constitution %><br>
+    <%= f.number_field :constitution %>
+  </div>
+  <div class="field">
+    <%= f.label :intelligence %><br>
+    <%= f.number_field :intelligence %>
+  </div>
+  <div class="field">
+    <%= f.label :wisdom %><br>
+    <%= f.number_field :wisdom %>
+  </div>
+  <div class="field">
+    <%= f.label :charisma %><br>
+    <%= f.number_field :charisma %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

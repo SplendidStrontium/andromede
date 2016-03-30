@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ability_scores
 	# let's fix our home
 	root :to => 'pages#home'
 
