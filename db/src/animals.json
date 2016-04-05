@@ -1,0 +1,169 @@
+[{
+	"working_src": ["wikipedia", ""]
+}, {
+	"human": {
+		"common_name": "Human",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "synapsida",
+			"class": "mammalia",
+			"order": "primates",
+			"suborder": "haplorhini",
+			"family": "hominidae",
+			"genus": "homo",
+			"species": "h. sapiens"
+		},
+		"is_extinct": "false",
+		"conserv_status": "least-concern"
+	}
+}, {
+	"cat": {
+		"common_name": "Cat",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "",
+			"class": "mammalia",
+			"order": "carnivora",
+			"suborder": "feliformia",
+			"family": "felidae",
+			"subfamily": "felinae",
+			"genus": "felis",
+			"species": "f. catus"
+		},
+		"is_extinct": "false",
+		"conserv_status": "domesticated"
+	}
+}, {
+	"dog": {
+		"common_name": "Dog",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "",
+			"class": "mammalia",
+			"order": "carnivora",
+			"suborder": "caniformia",
+			"family": "canidae",
+			"subfamily": "",
+			"genus": "canis",
+			"species": "c. lupus",
+			"subspecies": "c. l. familiaris"
+		},
+		"is_extinct": "false",
+		"conserv_status": "domesticated"
+	}
+}, {
+	"moose": {
+		"common_name": "Moose",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "",
+			"class": "mammalia",
+			"order": "artiodactyla",
+			"suborder": "",
+			"family": "cervidae",
+			"subfamily": "capreolinae",
+			"genus": "alces",
+			"species": "a. alces",
+			"subspecies": ""
+		},
+		"is_extinct": "false",
+		"conserv_status": "least-concern"
+	}
+}, {
+	"siberian_tiger": {
+		"common_name": "Siberian Tiger",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "",
+			"class": "mammalia",
+			"order": "carnivora",
+			"suborder": "",
+			"family": "felidae",
+			"subfamily": "pantherinae",
+			"genus": "panthera",
+			"species": "p. tigris",
+			"subspecies": "p. tigris altaica"
+		},
+		"is_extinct": "false",
+		"conserv_status": "threatened-endangered"
+	}
+}, {
+	"t_rex": {
+		"common_name": "Tyrannosaurus",
+		"specie": {
+			"kingdom": "animalia",
+			"phylum": "chordata",
+			"clade": "dinosauria",
+			"class": "",
+			"order": "saurischia",
+			"suborder": "theropoda",
+			"family": "tyrannosauridae",
+			"subfamily": "tyrannosaurinae",
+			"tribe": "tyrannosaurini",
+			"genus": "tyrannosaurus",
+			"species": "Tyrannosaurus rex",
+			"subspecies": ""
+		},
+		"is_extinct": "true",
+		"conserv_status": ""
+	}
+}, {
+	"potato": {
+		"common_name": "the common potato",
+		"specie": {
+			"kingdom": "plantae-asterids",
+			"phylum": "",
+			"clade": "",
+			"class": "",
+			"order": "solanales",
+			"suborder": "",
+			"family": "Solanaceae",
+			"subfamily": "",
+			"genus": "Solanum",
+			"species": "S. tuberosum",
+			"subspecies": ""
+		},
+		"is_extinct": "false",
+		"conserv_status": "domesticated"
+	}
+}, {
+	"e_coli": {
+		"common_name": "E coli",
+		"ext_name": "Escherichia coli",
+		"specie": {
+			"kingdom": "Bacteria",
+			"phylum": "Proteobacteria",
+			"clade": "",
+			"class": "Gammaproteobacteria",
+			"order": "Enterobacteriales",
+			"family": "Enterobacteriaceae",
+			"genus": "Escherichia",
+			"species": "E. coli",
+			"subspecies": ""
+		},
+		"is_extinct": "false",
+		"conserv_status": "least-concern"
+	}
+}, {
+	"portobello_mush": {
+		"common_name": "Portobello mushroom",
+		"ext_name": "Agaricus bisporus",
+		"specie": {
+			"kingdom": "Fungi",
+			"division": "Basidiomycota",
+			"class": "Agaricomycetes",
+			"order": "Agaricales",
+			"family": "Agaricaceae",
+			"genus": "Agaricus",
+			"species": "A. bisporus",
+			"subspecies": ""
+		},
+		"is_extinct": "false",
+		"conserv_status": "least-concern"
+	}
+}]
