@@ -1,0 +1,125 @@
+[{
+	"working_src": [
+		"https://en.wikipedia.org/wiki/List_of_elements",
+		"other wikipedia pages"
+	],
+	"element_list": {
+		"hydrogen": {
+			"symbol": "H",
+			"full_name": "Hydrogen",
+			"protons": 1,
+			"neutrons": [0,1,2],		
+			"group": "1",
+			"period": "1",
+			"atomic_weight": [1.008]
+		},
+		"helium": {
+			"symbol": "He",
+			"full_name": "Helium",
+			"protons": 2,
+			"neutrons": [1,2],		
+			"group": "18",
+			"period": "1",
+			"atomic_weight": [4.002602]
+		},
+		"lithium": {
+			"symbol": "Li",
+			"full_name": "Lithium",
+			"protons": 3,
+			"neutrons": [3,4],		
+			"group": "1",
+			"period": "2",
+			"atomic_weight": [6.94]
+		},
+		"beryllium": {
+			"symbol": "Be",
+			"full_name": "Beryllium",
+			"protons": 4,
+			"neutrons": [3,5,6],		
+			"group": "2",
+			"period": "2",
+			"atomic_weight": [9.0121831]
+		},
+		"boron": {
+			"symbol": "B",
+			"full_name": "Boron",
+			"protons": 5,
+			"neutrons": [5,6],		
+			"group": "13",
+			"period": "2",
+			"atomic_weight": [10.81]
+		},
+		"carbon": {
+			"symbol": "C",
+			"full_name": "Carbon",
+			"protons": 6,
+			"neutrons": [5,6,7,8],		
+			"group": "14",
+			"period": "2",
+			"atomic_weight": [12.011]
+		},
+		"nitrogen": {
+			"symbol": "N",
+			"full_name": "Nitrogen",
+			"protons": 7,
+			"neutrons": [6,7,8],		
+			"group": "15",
+			"period": "2",
+			"atomic_weight": [14.007]
+		},
+		"oxygen": {
+			"symbol": "O",
+			"full_name": "Oxygen",
+			"protons": 8,
+			"neutrons": [8,9,10],		
+			"group": "16",
+			"period": "2",
+			"atomic_weight": [15.999]
+		},
+		"fluorine": {
+			"symbol": "F",
+			"full_name": "Fluorine",
+			"protons": 9,
+			"neutrons": [9,10],		
+			"group": "17",
+			"period": "2",
+			"atomic_weight": [18.998403]
+		},
+		"neon": {
+			"symbol": "Ne",
+			"full_name": "Neon",
+			"protons": 10,
+			"neutrons": [10,11,12],		
+			"group": "18",
+			"period": "2",
+			"atomic_weight": [20.1797]
+		},
+		"sodium": {
+			"symbol": "Na",
+			"full_name": "Sodium",
+			"protons": 11,
+			"neutrons": [11,12],		
+			"group": "1",
+			"period": "3",
+			"atomic_weight": [22.98976]
+		},
+		"magnesium": {
+			"symbol": "Mg",
+			"full_name": "Magnesium",
+			"protons": 12,
+			"neutrons": [12,13,14],		
+			"group": "2",
+			"period": "3",
+			"atomic_weight": [24.305]
+		},
+		"aluminium": {
+			"symbol": "Al",
+			"full_name": "Aluminium",
+			"protons": 13,
+			"neutrons": [13,14],		
+			"group": "13",
+			"period": "3",
+			"atomic_weight": [26.9815]
+		}
+	}
+}]
