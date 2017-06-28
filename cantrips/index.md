@@ -6,14 +6,21 @@ permalink: /cantrips/
 
 Cantrips are the smallest manipulations of magic that are observable to ordinary humanoids. Below is a list of cantrips by sphere/focus.
 
-* **Astrology**
-	* _Sense Star_
-		* caster knows direction of closest star(s), knowing the solar time.
-* **Charisma**
+
+* **Alteration**
+
+* **Charisma/Mischief**
 	* _Etiquette_
 		* caster's mannerisms are altered as desired to appear polite. Does not alter key alignment.
 	* _Face_
 		* caster uses great concentration to make their face appear like another of similar specie.
+* **Divination**
+	* _Know Direction(Geomancy)_
+		* caster knows a useful earth-based orientation; eg magnetic north
+	* _Metal Detection(Geomancy)_
+		* caster can sense small-medium metal objects even if obscured.
+	* _Sense Star(Astrology)_
+		* caster knows direction of closest star(s), knowing the solar time.
 * **Domestics**
 	* _Brush_
 		* bits of dust are herded around. What brooms do falls into this category.
@@ -38,6 +45,11 @@ Cantrips are the smallest manipulations of magic that are observable to ordinary
 		* caster's target is drained of kinetic/thermal energy, eg creating ice from water.
 	* _Condense_
 		* caster gathers latent water vapor to condense an orb between their palms approx 3in diameter
+* **Evocation**
+	* _Light_
+		* target object glows dimly, eg an ember's glow, or if concentrated, a pocket flashlight or laser pointer. Quality of existing light may be changed, such as to make something appear another color.
+	* _Sound_
+		* sound emits from local location, ie throwing one's voice; the sound may be anything in memory, but sound volume/pitch are around caster's natural abilities
 * **Gastronomy**
 	* _Affect Taste_
 		* caster changes taste of a food. Smell is neutralized.
@@ -47,16 +59,6 @@ Cantrips are the smallest manipulations of magic that are observable to ordinary
 		* target food is spoiled by accelerated natural causes, ie bread molds or dries out depending on environment
 	* _Waft_
 		* caster changes smell of target food and disperses it locally.
-* **Geomancy**
-	* _Know Direction_
-		* caster knows a useful earth-based orientation; eg magnetic north
-	* _Metal Detection_
-		* caster can sense small-medium metal objects even if obscured.
-* **Illusion**
-	* _Light_
-		* target object glows dimly, eg an ember's glow, or if concentrated, a pocket flashlight or laser pointer. Quality of existing light may be changed, such as to make something appear another color.
-	* _Sound_
-		* sound emits from local location, ie throwing one's voice; the sound may be anything in memory, but sound volume/pitch are around caster's natural abilities
 * **Numbers**
 	* _Count_ 
 		* caster makes a highly accurate guess at (eg) marbles in a clear container.
@@ -64,12 +66,12 @@ Cantrips are the smallest manipulations of magic that are observable to ordinary
 		* like Count, caster guesses at value of non-integer value, eg someone's height, or a high-value integer, eg hairs on a cat
 	* _Sort_
 		* caster may increase concentration while sorting, eg, copper pieces into piles
-* **Runes**
+* **Invoke Runes**
 	* _Create Inscription_
 		* caster evokes magical writing, visible only by magical means.
 * **Telekinetics**
 	* _Alter Shape_
-		* an object may be cut, water splashed, etc, such that the constituent atoms do not change type.
+		* an object may be cut, water splashed, etc, such that the constituent atoms do not change type or number.
 	* _Gust_
 		* caster psionically creates air gust.
 	* _Shove_
@@ -77,7 +79,9 @@ Cantrips are the smallest manipulations of magic that are observable to ordinary
 	* _Wrap_
 		* caster remotely commands small object to move, eg sew a button or wrap a rock in paper
 * **Necromancy**
-	* _Exterminate_
-		* target 0 HD creature dies.	
-	* _Wilt_
+	* _Exterminate(Blood)_
+		* target 0 HD creature dies.
+	* _Irritating Itch(Blood)_
+		* cantrip can influence another's bodily functions in such a way that he or she can be made to: wink, nod, scratch, belch, fart, giggle, sneeze, or perform some other involuntary action. All are allowed a save vs. spell and neither can break spellcasting attempts.	
+	* _Wilt(Plant)_
 		* target plant dries out, hastened toward death
