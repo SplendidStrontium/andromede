@@ -17,7 +17,7 @@ title: Andromede
 email: pnkrsnak@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Andromede is an open-source rpg project coming soon!
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://androme.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: remington_sl3
 github_username:  splendidstrontium
