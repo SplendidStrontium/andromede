@@ -2,3 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 env/
+staticfiles/
+andromede/__pycache__/
+silhouette/__pycache__/
+silhouette/migrations/__pycache__/
