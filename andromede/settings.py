@@ -25,7 +25,7 @@ SECRET_KEY = 'qo769mu098=wk+d_it(qxq-_(ryq9)&hvfo#bu#oc2ptkn-#lx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.androme.de']
 
 
 # Application definition
@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'androdb',
 		'USER': 'androdbuser',
-		'PASSWORD': 'h0wNOWt4nmoo',
+		'PASSWORD': 'f1shTAc05?!',
 		'HOST': 'localhost',
 		'PORT': '',
     }
@@ -123,6 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
