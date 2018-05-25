@@ -1,0 +1,35 @@
+/* NAVBAR CSS */
+
+.nav{
+	background: #ccc;
+	font-size: 1.5em;
+	border-bottom: 1px solid #999;
+}
+
+.nav ul {
+	display: block;
+	list-style: none;
+	overflow: hidden;
+}
+
+.nav li{
+
+}
+
+.nav li a{
+	float: right;
+	display: inline-block;
+	text-align: center;
+	padding: 12px 18px;
+	text-decoration: none;
+}
+
+
+.nav li a:hover {
+	background-color: yellow;
+}
+
+.nav #hm-lnk{
+	float: left	!important;
+}
+

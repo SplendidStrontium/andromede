@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 html{
 	background-color: #FAD7A0;
 }
@@ -7,20 +12,31 @@ body{
 }
 
 .container{
-	border: 1px solid black;
+	background-color: #eee;
 }
 
-.nav{
-	background: #ccc;
-	font-size: 1.5em;
+.clearfix::after{ 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
-.nav ul {
-	display: inline-block;
-	list-style: none;
+#content-container{
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 800px;
+	padding: 15px 10px 30px;
+
 }
 
-.nav a:hover {
-	background-color: yellow;
+#content-container::after{
+	content: '';
+	position: absolute;
+	width: 50%;
+	left: 25%;
+	margin-top: 18px;
+	border-bottom: 1px solid #777;
 }
 
