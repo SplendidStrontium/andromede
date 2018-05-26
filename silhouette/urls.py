@@ -1,5 +1,5 @@
 # silhouette/urls.py
-from django.conf.urls import url
+from django.conf.urls import include, url
 from silhouette import views
 
 urlpatterns = [

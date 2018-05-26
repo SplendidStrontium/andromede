@@ -6,3 +6,5 @@ staticfiles/
 andromede/__pycache__/
 silhouette/__pycache__/
 silhouette/migrations/__pycache__/
+blog/output/
+blog/__pycache__/
