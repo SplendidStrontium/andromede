@@ -2,9 +2,13 @@ _site
 .sass-cache
 .jekyll-metadata
 env/
+static/htmlblog/
 staticfiles/
+andromede/__init__.py
 andromede/__pycache__/
+silhouette/__init__.py
 silhouette/__pycache__/
+silhouette/migrations/__init__.py
 silhouette/migrations/__pycache__/
 blog/output/
 blog/__pycache__/

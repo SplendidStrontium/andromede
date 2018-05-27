@@ -17,10 +17,9 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
 
-from andromede.views import blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 	path('', include('silhouette.urls')),
-	path('blog/', blog),
+	path('', include('blog.urls')),
 ]
