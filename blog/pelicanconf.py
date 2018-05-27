@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Paige Krsnak'
 SITENAME = 'The Andromede Project Weblog'
-SITEURL = 'http://blog.androme.de'
+SITEURL = 'http://androme.de/blog'
 GITHUB_URL = 'http://github.com/splendidstrontium'
 PATH = 'content'
 
@@ -35,5 +35,5 @@ DEFAULT_PAGINATION = False
 RELATIVE_URLS = False
 
 # theme
-THEME = "notmyidea"
+THEME = "themes/simple"
 

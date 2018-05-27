@@ -2,7 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 env/
-static/htmlblog/
+static/htmlblog
 staticfiles/
 andromede/__init__.py
 andromede/__pycache__/
