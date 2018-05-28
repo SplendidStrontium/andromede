@@ -17,7 +17,8 @@
                     {% endfor %}
                     </address>
                 </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+	<!-- the following used to read article.summary, changed as I add more -->
+                <div class="entry-content"> {{ article.content }} </div><!-- /.entry-content -->
         </article></li>
 {% endfor %}
 </ol><!-- /#posts-list -->
