@@ -28,15 +28,14 @@ body{
 	margin-left: auto;
 	max-width: 800px;
 	padding: 15px 10px 30px;
-
+    min-height: 200px;
 }
 
-#content-container::after{
+.footer-ceiling::before{
 	content: '';
 	position: absolute;
 	width: 50%;
 	left: 25%;
-	margin-top: 18px;
-	border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777;
 }
 

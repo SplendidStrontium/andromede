@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qo769mu098=wk+d_it(qxq-_(ryq9)&hvfo#bu#oc2ptkn-#lx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.androme.de', 'localhost', '127.0.0.1']
 
