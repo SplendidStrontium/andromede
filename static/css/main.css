@@ -11,6 +11,15 @@ body{
 	margin: 0;
 }
 
+h1{
+    font-family: 'Exo 2', monospace;
+    font-weight: 'Light';
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
 .container{
 	background-color: #eee;
 }
@@ -22,6 +31,55 @@ body{
    height: 0; 
    clear: both;
 }
+
+/* NAVBAR CSS */
+
+.nav{
+	background: #ccc;
+	border-bottom: 1px solid #999;
+    font-family: 'Exo 2';
+    font-weight: 'Semi-Bold';
+}
+
+.nav #hm-lnk{
+    font-size: 2em;
+    font-family: 'Exo 2';
+    font-weight: 'Extra-Light';
+}
+
+.nav ul {
+	display: block;
+	list-style: none;
+	overflow: hidden;
+}
+
+.nav li{
+
+}
+
+.nav li a{
+	float: right;
+	display: inline-block;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration: none;
+    font-size: 2em;
+}
+
+
+.nav li a:hover {
+	background-color: yellow;
+}
+
+.nav #hm-lnk{
+	float: left	!important;
+    font-weight: 'extra-light';
+}
+
+
+
+
+
 
 #content-container{
 	margin-right: auto;
@@ -37,5 +95,38 @@ body{
 	width: 50%;
 	left: 25%;
     border-bottom: 1px solid #777;
+}
+
+/* FOOTER CSS */
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5px;
+    padding-bottom: 4px;
+    font-family: 'Exo 2', monospace;
+    font-weight: 'regular';
+}
+
+.footer-container ul{
+    list-style: none;
+}
+
+.footer-container li{
+    margin: 5px 10px;
+}
+
+.footer-container li a{
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+.footer-container li a:hover{
+    text-decoration: underline overline;
+}
+
+.footer-l, .footer-c, .footer-r{
+    flex: 1 1 auto;
+    text-align: center;
 }
 
