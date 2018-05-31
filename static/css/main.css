@@ -4,16 +4,29 @@
 }
 
 html{
-	background-color: #FAD7A0;
+	background-color: rgb(12,30,63);
 }
 
 body{
 	margin: 0;
 }
 
+/* logo canvas */
+
+canvas{
+    display: inline;
+}
+
+/*
+#tlogo{
+    background-color: #fff;
+}
+*/
+
 h1{
-    font-family: 'Exo 2', monospace;
-    font-weight: 'Light';
+    font-family: 'Titillium Web', monospace;
+    font-weight: 600;
+    color: rgb(19,61,40);
 }
 
 p{
@@ -35,22 +48,21 @@ p{
 /* NAVBAR CSS */
 
 .nav{
-	background: #ccc;
+	background-color: rgb(3,15,38);
 	border-bottom: 1px solid #999;
-    font-family: 'Exo 2';
-    font-weight: 'Semi-Bold';
-}
-
-.nav #hm-lnk{
-    font-size: 2em;
-    font-family: 'Exo 2';
-    font-weight: 'Extra-Light';
+    font-family: 'Titillium Web';
+    font-weight: 300;
+    height: 90px;
+    overflow: hidden;
 }
 
 .nav ul {
-	display: block;
+	display: inline-block;
 	list-style: none;
 	overflow: hidden;
+    float: right;
+    margin-right: 1em;
+    margin-top: .1em;
 }
 
 .nav li{
@@ -61,25 +73,26 @@ p{
 	float: right;
 	display: inline-block;
 	text-align: center;
-	padding: 14px 18px;
 	text-decoration: none;
     font-size: 2em;
+    font-weight: 600;
 }
 
-
-.nav li a:hover {
-	background-color: yellow;
+.nav li a:link{
+    color: rgb(104,223,237);
 }
 
-.nav #hm-lnk{
-	float: left	!important;
-    font-weight: 'extra-light';
+.nav li a:visited{
+    color: rgb(48,103,109);
 }
 
+.nav li a:hover{
+    color: rgb(168,221,227);
+}
 
-
-
-
+.nav li a:active{
+    color: rgb(82,175,186);
+}
 
 #content-container{
 	margin-right: auto;
@@ -87,6 +100,7 @@ p{
 	max-width: 800px;
 	padding: 15px 10px 30px;
     min-height: 200px;
+    color: rgb(7,13,6);
 }
 
 .footer-ceiling::before{
@@ -104,8 +118,8 @@ p{
     align-items: center;
     margin-top: 5px;
     padding-bottom: 4px;
-    font-family: 'Exo 2', monospace;
-    font-weight: 'regular';
+    font-family: 'Titillium Web', monospace;
+    font-weight: 300;
 }
 
 .footer-container ul{
@@ -119,10 +133,23 @@ p{
 .footer-container li a{
     padding: 2px 5px;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.footer-container li a:hover{
-    text-decoration: underline overline;
+.footer-container li a:link {
+    color: #373ba6;
+}
+
+.footer-container li a:visited {
+    color: rgb(34,19,76);
+}
+
+.footer-container li a:hover {
+    color: rgb(34,19,76);
+}
+
+.footer-container li a:active{
+    color: #42b874;
 }
 
 .footer-l, .footer-c, .footer-r{
