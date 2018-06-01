@@ -8,11 +8,10 @@
     <title>
       {% block title %}{% endblock %}
     </title>
-
-    <script src="{% static 'js/main.js' %}"></script> <!-- This is how to include a static file -->
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600|Lato" rel="stylesheet" type="text/css" />
-	<link rel="import" href="{% static 'htmlblog/index.html' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+    <link rel="import" href="{% static 'htmlblog/index.html' %}" />
+    <script src="{% static 'js/main.js' %}"></script>
   </head>
   <body onload="draw();">
     <div class="container">

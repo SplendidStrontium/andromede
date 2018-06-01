@@ -17,11 +17,164 @@ canvas{
     display: inline;
 }
 
-/*
-#tlogo{
-    background-color: #fff;
+#nav-btn{
+    display: inline;
+    width: 140px;
+    height: 140px;
+    margin: 5px 5px;
+    border: 1px solid red;
+    float: right;
 }
-*/
+
+.hidden-nav{
+    display: none;
+}
+
+/* 1-319 px wide */
+@media only screen and (max-width: 320px) {
+    .nav {
+        height: 170px;
+    }
+
+    #content-container {
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    .footer-container li a{
+        font-size: 3em;
+    }
+
+    #copyright{
+        font-size: 2.5em;
+    }
+}
+
+/* 320-459 px wide */
+@media only screen and (min-width: 320px) {
+    .nav {
+        height: 160px;
+    }
+
+    #content-container li a{
+        font-size: 2.5em;
+    }
+
+    .footer-container li a{
+        font-size: 2.6em;
+    }
+
+    #copyright{
+        font-size: 2em;
+    }
+}
+
+/* 460-599 px wide */
+@media only screen and (min-width: 460px) {
+    .nav {
+        height: 150px;
+    }
+
+    #content-container {
+        width: 96%;
+        font-size: 2em;
+    }
+
+    .footer-container li a{
+        font-size: 2.3em;
+    }
+
+    #copyright{
+        font-size: 1.7em;
+    }
+}
+
+/* 600-767 px wide */
+@media only screen and (min-width: 600px) {
+    .nav {
+        height: 150px;
+    }
+    
+    #content-container {
+        width: 96%;
+        font-size: 2em;
+    }
+
+    .footer-container li a{
+        font-size: 2em;
+    }
+
+    #copyright{
+        font-size: 2em;
+    }
+}
+
+
+/* 768-991 px wide */
+@media only screen and (min-width: 768px) {
+    .nav {
+        height: 150px;
+    }
+
+    #content-container {
+        width: 96%;
+        max-width: 900px;
+        font-size: 1.75em;
+    }
+
+    .footer-container li a{
+        font-size: 1.75em;
+    }
+
+    #copyright{
+        font-size: 1.5em;
+    }
+}
+
+/* 992-1199 px wide */
+@media only screen and (min-width: 992px) {
+    .nav {
+        height: 150px;
+    }
+
+    #content-container {
+        width: 900px;
+        font-size: 1.5em;
+    }
+
+    .footer-container li a{
+        font-size: 1.5em;
+    }
+
+    #copyright{
+        font-size: 1.2em;
+    }
+}
+
+/* 1200 and up */
+@media only screen and (min-width: 1200px) {
+    .nav {
+        height: 150px;
+    }
+
+    #content-container {
+        width: 75%;
+        font-size: 1.2em;
+    }
+
+    .footer-container li a{
+        font-size: 1.2em;
+    }
+
+    #copyright{
+        font-size: 1em;
+    }
+}
+
+
+#tlogo{
+    border: 1px solid white;
+}
 
 h1{
     font-family: 'Titillium Web', monospace;
@@ -48,12 +201,11 @@ p{
 /* NAVBAR CSS */
 
 .nav{
-	background-color: rgb(3,15,38);
-	border-bottom: 1px solid #999;
+    background-color: rgb(3,15,38);
     font-family: 'Titillium Web';
     font-weight: 300;
-    height: 90px;
     overflow: hidden;
+    border-bottom: 1px solid black;
 }
 
 .nav ul {
@@ -74,7 +226,6 @@ p{
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-    font-size: 2em;
     font-weight: 600;
 }
 
@@ -97,8 +248,7 @@ p{
 #content-container{
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 800px;
-	padding: 15px 10px 30px;
+	padding: 15px 2px 30px;
     min-height: 200px;
     color: rgb(7,13,6);
 }
