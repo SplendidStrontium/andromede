@@ -11,17 +11,23 @@ body{
 	margin: 0;
 }
 
+.nav{
+    height: 10vh;
+    width: 100%;
+}
+
 /* logo canvas */
 
 canvas{
     display: inline;
+    border: 3px solid #999;
 }
 
 #nav-btn{
     display: inline;
-    width: 140px;
-    height: 140px;
-    margin: 5px 5px;
+    width: 8vh;
+    height: 8vh;
+    margin: 1vh 1vh;
     border: 1px solid red;
     float: right;
 }
@@ -38,7 +44,26 @@ canvas{
 
     #content-container {
         width: 100%;
-        font-size: 2.5em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -56,8 +81,29 @@ canvas{
         height: 160px;
     }
 
-    #content-container li a{
-        font-size: 2.5em;
+    #content-container{
+        width: 100%;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+   
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -77,7 +123,27 @@ canvas{
 
     #content-container {
         width: 96%;
-        font-size: 2em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -97,7 +163,27 @@ canvas{
     
     #content-container {
         width: 96%;
-        font-size: 2em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+   
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -119,7 +205,27 @@ canvas{
     #content-container {
         width: 96%;
         max-width: 900px;
-        font-size: 1.75em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -139,7 +245,27 @@ canvas{
 
     #content-container {
         width: 900px;
-        font-size: 1.5em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -159,7 +285,27 @@ canvas{
 
     #content-container {
         width: 75%;
-        font-size: 1.2em;
+    }
+
+    #blog-hm-preview .entry-title {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #blog-hm-preview .post-info {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    #blog-hm-preview .entry-content {
+        font-size: 16px;
+    }
+
+    #blog-hm-preview .entry-content a{
+        font-size: 16px;
     }
 
     .footer-container li a{
@@ -173,7 +319,6 @@ canvas{
 
 
 #tlogo{
-    border: 1px solid white;
 }
 
 h1{
@@ -204,7 +349,7 @@ p{
     background-color: rgb(3,15,38);
     font-family: 'Titillium Web';
     font-weight: 300;
-    overflow: hidden;
+    /*overflow: hidden;*/
     border-bottom: 1px solid black;
 }
 
@@ -251,6 +396,20 @@ p{
 	padding: 15px 2px 30px;
     min-height: 200px;
     color: rgb(7,13,6);
+}
+
+#blog-hm-preview h2{
+    font-family: 'Titillium Web', monospace;
+    font-weight: 600;
+}
+
+#blog-hm-preview ol{
+    list-style: none;
+}
+
+#blog-hm-preview .post-info{
+    font-family: 'Titillium Web', monospace;
+    font-weight: 300;
 }
 
 .footer-ceiling::before{
