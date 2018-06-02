@@ -25,3 +25,14 @@ function draw() {
         // canvas-unsupported code here
     }
 }
+
+// toggle nav menu
+function toggleNavMenu() {
+    var x = document.getElementById('hidden-nav-list');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+

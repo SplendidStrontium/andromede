@@ -19,27 +19,52 @@ body{
 /* logo canvas */
 
 canvas{
-    display: inline;
+    margin: 1vh 1vh;
     border: 3px solid #999;
 }
 
+/* draw the button*/
 #nav-btn{
-    display: inline;
+    position: relative;
     width: 8vh;
     height: 8vh;
     margin: 1vh 1vh;
     border: 1px solid red;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 8vh;
     float: right;
 }
 
-.hidden-nav{
-    display: none;
+#nav-btn-txt{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    color: red;
+    font-size: 9vh;
+}
+
+#nav-btn:hover{
+    background-color: blue;
+}
+
+/* landscape makes a diff menu */
+@media only screen and (orientation: landscape){
+    #nav-btn{
+        
+    }
+}
+
+#hidden-nav-list{
+    border: 1px solid black;
 }
 
 /* 1-319 px wide */
 @media only screen and (max-width: 320px) {
     .nav {
-        height: 170px;
+
     }
 
     #content-container {
@@ -78,7 +103,6 @@ canvas{
 /* 320-459 px wide */
 @media only screen and (min-width: 320px) {
     .nav {
-        height: 160px;
     }
 
     #content-container{
@@ -118,7 +142,7 @@ canvas{
 /* 460-599 px wide */
 @media only screen and (min-width: 460px) {
     .nav {
-        height: 150px;
+    
     }
 
     #content-container {
@@ -158,7 +182,7 @@ canvas{
 /* 600-767 px wide */
 @media only screen and (min-width: 600px) {
     .nav {
-        height: 150px;
+   
     }
     
     #content-container {
@@ -199,7 +223,7 @@ canvas{
 /* 768-991 px wide */
 @media only screen and (min-width: 768px) {
     .nav {
-        height: 150px;
+  
     }
 
     #content-container {
@@ -280,7 +304,7 @@ canvas{
 /* 1200 and up */
 @media only screen and (min-width: 1200px) {
     .nav {
-        height: 150px;
+        
     }
 
     #content-container {
@@ -353,13 +377,12 @@ p{
     border-bottom: 1px solid black;
 }
 
+
+
 .nav ul {
-	display: inline-block;
+	display: block;
 	list-style: none;
-	overflow: hidden;
     float: right;
-    margin-right: 1em;
-    margin-top: .1em;
 }
 
 .nav li{
@@ -368,7 +391,7 @@ p{
 
 .nav li a{
 	float: right;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	text-decoration: none;
     font-weight: 600;

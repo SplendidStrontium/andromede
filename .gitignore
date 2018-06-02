@@ -6,6 +6,7 @@ static/htmlblog
 staticfiles/
 andromede/__init__.py
 andromede/__pycache__/
+andromede/settings.py
 silhouette/__init__.py
 silhouette/__pycache__/
 silhouette/migrations/__init__.py
