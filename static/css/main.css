@@ -8,10 +8,11 @@ html{
 }
 
 body{
-	margin: 0;
+	
 }
 
 .nav{
+    margin-bottom: .5vh;
     height: 10vh;
     width: 100%;
 }
@@ -19,8 +20,7 @@ body{
 /* logo canvas */
 
 canvas{
-    margin: 1vh 1vh;
-    border: 3px solid #999;
+    
 }
 
 /* draw the button*/
@@ -50,6 +50,15 @@ canvas{
     background-color: blue;
 }
 
+#dropdown-nav{
+    display: inline-block;
+    position: absolute;
+    top: 3vh;
+    right: 20vw;
+    line-height: 8vh;
+}
+
+
 /* landscape makes a diff menu */
 @media only screen and (orientation: landscape){
     #nav-btn{
@@ -62,13 +71,24 @@ canvas{
 }
 
 /* 1-319 px wide */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-device-width: 320px) {
     .nav {
 
     }
 
+    #dropdown-nav{
+        font-size: 30px;
+    }
+
+    #hidden-nav{
+        font-size: 30px;
+    }
+
     #content-container {
-        width: 100%;
+        width: 96%;
+        margin-right: 2vw;
+        margin-left: 2vw;
+ 
     }
 
     #blog-hm-preview .entry-title {
@@ -101,12 +121,22 @@ canvas{
 }
 
 /* 320-459 px wide */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-device-width: 320px) {
     .nav {
     }
 
+    #dropdown-nav{
+        font-size: 30px;
+    }
+
+    #hidden-nav{
+        font-size: 30px;
+    }
     #content-container{
-        width: 100%;
+        width: 96%;
+        margin-right: 2vw;
+        margin-left: 2vw;
+ 
     }
 
     #blog-hm-preview .entry-title {
@@ -140,14 +170,13 @@ canvas{
 }
 
 /* 460-599 px wide */
-@media only screen and (min-width: 460px) {
+@media only screen and (min-device-width: 460px) {
     .nav {
     
     }
 
     #content-container {
-        width: 96%;
-    }
+   }
 
     #blog-hm-preview .entry-title {
         font-size: 18px;
@@ -180,9 +209,9 @@ canvas{
 }
 
 /* 600-767 px wide */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-device-width: 600px) {
     .nav {
-   
+        height: 9vh; 
     }
     
     #content-container {
@@ -221,14 +250,16 @@ canvas{
 
 
 /* 768-991 px wide */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
     .nav {
-  
+        height: 8vh; 
     }
 
     #content-container {
         width: 96%;
         max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #blog-hm-preview .entry-title {
@@ -262,9 +293,9 @@ canvas{
 }
 
 /* 992-1199 px wide */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-device-width: 992px) {
     .nav {
-        height: 150px;
+        height: 7vh;
     }
 
     #content-container {
@@ -302,9 +333,9 @@ canvas{
 }
 
 /* 1200 and up */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-device-width: 1200px) {
     .nav {
-        
+        height: 6vh;
     }
 
     #content-container {
@@ -380,18 +411,19 @@ p{
 
 
 .nav ul {
-	display: block;
 	list-style: none;
-    float: right;
 }
 
 .nav li{
 
 }
 
-.nav li a{
+#hidden-nav-list{
+    float: right;
+}
+
+#hidden-nav-list li a{
 	float: right;
-	display: block;
 	text-align: center;
 	text-decoration: none;
     font-weight: 600;
@@ -413,10 +445,14 @@ p{
     color: rgb(82,175,186);
 }
 
+#dropdown-nav li a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
 #content-container{
-	margin-right: auto;
-	margin-left: auto;
-	padding: 15px 2px 30px;
+	margin-right: 2vw;
+	margin-left: 2vw;
     min-height: 200px;
     color: rgb(7,13,6);
 }

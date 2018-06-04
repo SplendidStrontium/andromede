@@ -1,6 +1,13 @@
-<div class="nav">
-    <canvas id="tlogo" width="500" height="150"></canvas>
+<div id="base-nav" class="nav">
+    <canvas id="tlogo" width="500" height="150" style='position: absolute; left: 0px; top: 0px;' ></canvas>
  
+
+    <div id="dropdown-nav">
+        <ul id="dropdown-nav-list">
+            <li><a href="{% url 'tools' %}">Tools</a></li>
+        </ul>
+    </div>
+
     <div id="nav-btn" onclick="toggleNavMenu()" width="280" height="280">
         <span id="nav-btn-txt">+</span>
     </div>  
