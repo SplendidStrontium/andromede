@@ -50,14 +50,6 @@ canvas{
     background-color: blue;
 }
 
-#dropdown-nav{
-    display: inline-block;
-    position: absolute;
-    top: 3vh;
-    right: 20vw;
-    line-height: 8vh;
-}
-
 
 /* landscape makes a diff menu */
 @media only screen and (orientation: landscape){
@@ -66,7 +58,7 @@ canvas{
     }
 }
 
-#hidden-nav-list{
+#right-nav-list{
     border: 1px solid black;
 }
 
@@ -76,11 +68,11 @@ canvas{
 
     }
 
-    #dropdown-nav{
-        font-size: 30px;
+    #mid-dropdown-nav{
+        display: none;
     }
 
-    #hidden-nav{
+    #right-nav{
         font-size: 30px;
     }
 
@@ -125,11 +117,11 @@ canvas{
     .nav {
     }
 
-    #dropdown-nav{
-        font-size: 30px;
+    #mid-dropdown-nav{
+        display: none;
     }
 
-    #hidden-nav{
+    #right-nav{
         font-size: 30px;
     }
     #content-container{
@@ -173,6 +165,13 @@ canvas{
 @media only screen and (min-device-width: 460px) {
     .nav {
     
+    }
+
+    #mid-dropdown-nav{
+        display: inline-block;
+        right: 20vw;
+        line-height: 6vh;
+        position: absolute;
     }
 
     #content-container {
@@ -418,11 +417,11 @@ p{
 
 }
 
-#hidden-nav-list{
+#right-nav-list{
     float: right;
 }
 
-#hidden-nav-list li a{
+#right-nav-list li a{
 	float: right;
 	text-align: center;
 	text-decoration: none;
@@ -445,7 +444,7 @@ p{
     color: rgb(82,175,186);
 }
 
-#dropdown-nav li a{
+#mid-dropdown-nav li a{
     text-decoration: none;
     font-weight: 600;
 }
