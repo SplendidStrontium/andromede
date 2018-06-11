@@ -1,6 +1,8 @@
 blinker==1.4
 Django==2.0.5
 django-admin-tools==0.8.1
+django-filter==1.1.0
+djangorestframework==3.8.2
 docutils==0.14
 feedgenerator==1.9
 gunicorn==19.8.1
