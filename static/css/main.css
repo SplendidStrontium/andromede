@@ -23,33 +23,6 @@ canvas{
     
 }
 
-/* draw the button*/
-#nav-btn{
-    position: relative;
-    width: 8vh;
-    height: 8vh;
-    margin: 1vh 1vh;
-    border: 1px solid red;
-    border-radius: 7px;
-    text-align: center;
-    line-height: 8vh;
-    float: right;
-}
-
-#nav-btn-txt{
-    position: absolute;
-    top: 0%;
-    left: 45%;
-    width: 50%;
-    margin: -15% 0 0 -25%;
-    color: red;
-    font-size: 9vh;
-}
-
-#nav-btn:hover{
-    background-color: blue;
-}
-
 
 /* landscape makes a diff menu */
 @media only screen and (orientation: landscape){
