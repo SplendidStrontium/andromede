@@ -31,9 +31,6 @@ canvas{
     }
 }
 
-#right-nav-list{
-    border: 1px solid black;
-}
 
 /* 1-319 px wide */
 @media only screen and (max-device-width: 320px) {
@@ -56,26 +53,6 @@ canvas{
  
     }
 
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
-
     .footer-container li a{
         font-size: 3em;
     }
@@ -90,39 +67,12 @@ canvas{
     .nav {
     }
 
-    #mid-dropdown-nav{
-        display: none;
-    }
 
-    #right-nav{
-        font-size: 30px;
-    }
     #content-container{
         width: 96%;
         margin-right: 2vw;
         margin-left: 2vw;
  
-    }
-
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-   
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
     }
 
     .footer-container li a{
@@ -140,36 +90,8 @@ canvas{
     
     }
 
-    #mid-dropdown-nav{
-        display: inline-block;
-        right: 20vw;
-        line-height: 6vh;
-        position: absolute;
-    }
-
     #content-container {
    }
-
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
 
     .footer-container li a{
         font-size: 2.3em;
@@ -190,27 +112,7 @@ canvas{
         width: 96%;
     }
 
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
    
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
-
     .footer-container li a{
         font-size: 2em;
     }
@@ -234,27 +136,6 @@ canvas{
         margin-left: auto;
     }
 
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
-
     .footer-container li a{
         font-size: 1.75em;
     }
@@ -274,26 +155,6 @@ canvas{
         width: 900px;
     }
 
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
 
     .footer-container li a{
         font-size: 1.5em;
@@ -314,26 +175,7 @@ canvas{
         width: 75%;
     }
 
-    #blog-hm-preview .entry-title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
 
-    #blog-hm-preview .post-info {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-
-    #blog-hm-preview .entry-content {
-        font-size: 16px;
-    }
-
-    #blog-hm-preview .entry-content a{
-        font-size: 16px;
-    }
 
     .footer-container li a{
         font-size: 1.2em;
@@ -394,13 +236,6 @@ p{
     float: right;
 }
 
-#right-nav-list li a{
-	float: right;
-	text-align: center;
-	text-decoration: none;
-    font-weight: 600;
-}
-
 .nav li a:link{
     color: rgb(104,223,237);
 }
@@ -417,10 +252,6 @@ p{
     color: rgb(82,175,186);
 }
 
-#mid-dropdown-nav li a{
-    text-decoration: none;
-    font-weight: 600;
-}
 
 #content-container{
 	margin-right: 2vw;
@@ -429,19 +260,6 @@ p{
     color: rgb(7,13,6);
 }
 
-#blog-hm-preview h2{
-    font-family: 'Titillium Web', monospace;
-    font-weight: 600;
-}
-
-#blog-hm-preview ol{
-    list-style: none;
-}
-
-#blog-hm-preview .post-info{
-    font-family: 'Titillium Web', monospace;
-    font-weight: 300;
-}
 
 .footer-ceiling::before{
 	content: '';
@@ -494,6 +312,4 @@ p{
 
 .footer-l, .footer-c, .footer-r{
     flex: 1 1 auto;
-    text-align: center;
-}
 
