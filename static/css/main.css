@@ -269,6 +269,46 @@ p{
     border-bottom: 1px solid #777;
 }
 
+/* ROLL A D6 -> HERE'S THE DIE APP */
+
+#app {
+  background: #ddd;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+
+.helpertxt{
+  padding: 0px;
+}
+
+button{
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+
+}
+#roll-btn{
+  font-size: 1.2em;
+  border-radius: 2px;
+  font-family: monospace;
+  background-color: #cd4e37;
+  border: 2px solid #cd4e37;
+  color: white;
+  text-align: center;
+}
+
+#roll-btn:hover{
+  border: 2px solid #cd4e37;
+  background-color: white;
+  color: #cd4e37;
+}
+
+#die-res{
+  margin: 5px;
+}
+
+
 /* FOOTER CSS */
 .footer-container{
     display: flex;

@@ -13,8 +13,15 @@
 	<div id="content-container">
 	<h1>Tools</h1>
     <p>
-        Here will be our first tools to design your character. First toy: dice.
+    Numbers are randomly generated with built-in JS functions.
     </p>
+
+   <div id="app">
+     <p class="helpertxt">{{ dierollintrotxt }}</p>  
+     <button id="roll-btn" v-on:click="rolladie">ROLL</button>
+     <textarea id="die-res" cols="50" rows="3" readonly></textarea>
+    </div>
+
 	</div>
   {% endblock %}
 </body>

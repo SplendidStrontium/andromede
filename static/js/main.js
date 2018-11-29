@@ -99,3 +99,19 @@ function toggleNavMenu() {
     }
 }
 
+
+new Vue({
+  el: "#app",
+  data: {
+  	dierollintrotxt: 'Version 1.0 rolls 2d4. Press the button!'
+  },
+  methods: {
+  	rolladie: function(){
+    	var res1 = Math.floor((Math.random() * 4) + 1);
+      var res2 = Math.floor((Math.random() * 4) + 1);
+      var tres = 'You rolled ' + res1 + ', ' + res2;
+      document.getElementById("die-res").innerHTML = tres;
+    }
+  }
+})
+
