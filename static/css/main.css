@@ -271,16 +271,19 @@ p{
 
 /* ROLL A D6 -> HERE'S THE DIE APP */
 
-#app {
+#dieapp {
   background: #ddd;
   border: 1px solid #222;
   border-radius: 4px;
   padding: 20px;
   transition: all 0.2s;
+  margin: 15px 0px 15px 0px;
 }
 
 .helpertxt{
   padding: 0px;
+  font-family: monospace;
+  font-size: 1.1em;
 }
 
 button{

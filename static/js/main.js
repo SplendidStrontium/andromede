@@ -89,29 +89,28 @@ $(document).ready(function() {
 
 });
 
-// toggle nav menu
-function toggleNavMenu() {
-    var x = document.getElementById('hidden-nav-list');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
+window.onload = function () {
+    var navvm = new Vue({
+        el: '#navapp',
+        data: {
+            msg: 'Tools'
+        }
+    })
 }
 
-
-new Vue({
-  el: "#app",
-  data: {
-  	dierollintrotxt: 'Version 1.0 rolls 2d4. Press the button!'
-  },
-  methods: {
-  	rolladie: function(){
-    	var res1 = Math.floor((Math.random() * 4) + 1);
-      var res2 = Math.floor((Math.random() * 4) + 1);
-      var tres = 'You rolled ' + res1 + ', ' + res2;
-      document.getElementById("die-res").innerHTML = tres;
-    }
-  }
-})
-
+window.onload = function () {
+    var dievm = new Vue({
+        el: "#dieapp",
+        data: {
+  	        introtxt: 'Version 1.0 rolls 2d4. Press the button!'
+        },
+        methods: {
+  	        rolladie: function(){
+    	        var res1 = Math.floor((Math.random() * 4) + 1);
+                var res2 = Math.floor((Math.random() * 4) + 1);
+                var tres = 'You rolled ' + res1 + ', ' + res2;
+                document.getElementById("die-res").innerHTML = tres;
+            }
+        }
+    })
+}
